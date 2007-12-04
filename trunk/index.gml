@@ -171,7 +171,7 @@ lat="30.53" lng="-89.68" zoom="8">
 <table width="100%">
 <tr>
 <td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="listNursingHomes" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq="nursing%3D1"
+<gm:list id="listNursingHomes" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=nursing%3D1"
 pagesize="10" template="myListTemplate">
 <gm:handleEvent event="select" src="mapNursingHomes"/>
 </gm:list>
