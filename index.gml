@@ -5,15 +5,13 @@
     and maps it to a Google Map using a "location" field and the "geolocationref" operator.
     @author: apapendieck@gmail.com
   -->
-<gm:list id="categorylist" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=category%3Dschools"
-  <div class="gm-app-header">
     <h3>Pearl River County Assets: All Assets</h3> 
   </div>
   
   <table width="100%">
     <tr>
       <td style="padding-right:10px; width:250px" valign="top">
-        <gm:list id="myList" data="${categorylist}"
+        <gm:list id="myList" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=category%3Dschools"
             pagesize="10" template="myListTemplate">
           <gm:handleEvent event="select" src="myMap"/>
         </gm:list>
