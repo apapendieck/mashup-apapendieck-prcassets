@@ -5,7 +5,7 @@
     and maps it to a Google Map using a "location" field and the "geolocationref" operator.
     @author: apapendieck@gmail.com
   -->
-
+<gm:list id="categorylist" data="schools"
   <div class="gm-app-header">
     <h3>Pearl River County Assets: All Assets</h3> 
   </div>
