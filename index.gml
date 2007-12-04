@@ -37,7 +37,31 @@
   </table>
     </gm:section>           
                 
- 
+    <gm:section id="sectionSchools" title="Schools">
+<div>
+    <h3>Schools</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listSchools" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=school%3D1" pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapSchools"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapSchools" style="border:solid black 1px" control="large"
+maptypes="true" data="${listSchools}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listSchools"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section> 
+
+
+
 
 <gm:section id="sectionFire" title="Fire">
 <div>
