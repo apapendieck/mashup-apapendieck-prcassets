@@ -13,6 +13,8 @@
     
      <gm:section id="sectionAll" title="All Assets">
   <div>
+  
+
       <h3>All Assets</h3> 
   </div>
       <table width="100%">
@@ -33,10 +35,7 @@
       </td>
     </tr>    
   </table>
-    </gm:section>   
-
-    
-        
+    </gm:section>           
                 
     <gm:section id="sectionSchools" title="Schools">
 <div>
@@ -86,6 +85,106 @@ lat="30.53" lng="-89.68" zoom="8">
 </tr>
 </table>
 </gm:section> 
+
+
+<gm:section id="sectionPost" title="Post">
+<div>
+<h3>Post</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listPost" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=postofficet%3D1"
+pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapPost"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapPost" style="border:solid black 1px" control="large"
+maptypes="true" data="${listPost}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listPost"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section> 
+
+
+<gm:section id="sectionLibraries" title="Libraries">
+<div>
+<h3>Libraries</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listLibraries" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=library%3D1"
+pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapLibraries"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapLibraries" style="border:solid black 1px" control="large"
+maptypes="true" data="${listLibraries}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listLibraries"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section> 
+
+
+<gm:section id="sectionLawEnforcement" title="Law Enforcement">
+<div>
+<h3>Law Enforcement</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listLawEnforcement" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq="lawenforce%3D1"
+pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapLawEnforcement"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapLawEnforcement" style="border:solid black 1px" control="large"
+maptypes="true" data="${listLawEnforcement}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listLawEnforcement"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section> 
+
+<gm:section id="sectionHospitals" title="Hospitals">
+<div>
+<h3>Hospitals</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listHospitals" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq="hospital%3D1"
+pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapHospitals"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapHospitals" style="border:solid black 1px" control="large"
+maptypes="true" data="${listHospitals}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listHospitals"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section> 
+
 
     <gm:section id="sectionDatabase" title="Database">
 <div>
