@@ -29,7 +29,7 @@
   </table>
      
     </gm:section>
-  </gm:container>
+
 
   
     <div>
@@ -63,5 +63,6 @@ Phone: <gm:text ref="gsx:telephone"/>
 <gm:toggle/>
 </div>
 </gm:template>
+  </gm:container>
 
 </gm:page>
