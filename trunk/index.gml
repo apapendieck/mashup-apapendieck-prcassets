@@ -7,7 +7,7 @@
   -->
   
   <gm:tabs target="myContainer"/>
-  <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:600px;">
+  <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:800px;">
     <gm:section id="sectionWorld" title="World">
       <table width="100%">
     <tr>
@@ -27,9 +27,8 @@
       </td>
     </tr>    
   </table>
-     
     </gm:section>
-
+  </gm:container>
 
   
     <div>
@@ -63,6 +62,6 @@ Phone: <gm:text ref="gsx:telephone"/>
 <gm:toggle/>
 </div>
 </gm:template>
-  </gm:container>
+
 
 </gm:page>
