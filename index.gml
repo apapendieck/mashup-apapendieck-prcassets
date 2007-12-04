@@ -5,10 +5,15 @@
     and maps it to a Google Map using a "location" field and the "geolocationref" operator.
     @author: apapendieck@gmail.com
   -->
-  
+   <div>
+      <h3>Pearl River County Assets</h3> 
+  </div>
   <gm:tabs target="myContainer"/>
   <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:800px;">
     <gm:section id="sectionWorld" title="World">
+   <div>
+      <h3>All Assets</h3> 
+  </div>
       <table width="100%">
     <tr>
       <td style="padding-right:10px; width:250px" valign="top">
@@ -30,10 +35,6 @@
     </gm:section>
   </gm:container>
 
-  
-    <div>
-      <h3>Pearl River County Assets: All Assets</h3> 
-  </div>
          
   <gm:template id="myListTemplate">
     <table class="blue-theme" style="width:250px">
