@@ -5,7 +5,8 @@
     and maps it to a Google Map using a "location" field and the "geolocationref" operator.
     @author: apapendieck@gmail.com
   -->
-    <h3>Pearl River County Assets: All Assets</h3> 
+    <div>
+      <h3>Pearl River County Assets: All Assets</h3> 
   </div>
   
   <table width="100%">
