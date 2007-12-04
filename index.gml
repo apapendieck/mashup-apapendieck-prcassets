@@ -9,10 +9,35 @@
       <h3>Pearl River County Assets</h3> 
   </div>
   <gm:tabs target="myContainer"/>
-  <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:800px;">
-    <gm:section id="sectionWorld" title="World">
-   <div>
+  <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:900px;">
+    
+     <gm:section id="sectionAll" title="All Assets">
+  <div>
       <h3>All Assets</h3> 
+  </div>
+      <table width="100%">
+    <tr>
+      <td style="padding-right:10px; width:250px" valign="top">
+        <gm:list id="myList" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values"
+            pagesize="10" template="myListTemplate">
+          <gm:handleEvent event="select" src="myMap"/>
+        </gm:list>
+      </td>
+      <td valign="top">
+        <gm:map id="myMap" style="border:solid black 1px" control="large"
+            maptypes="true" data="${myList}" geolocationref="gsx:location"
+            infotemplate="myMapDetailsTemplate"
+            lat="30.53" lng="-89.68" zoom="8">
+          <gm:handleEvent event="select" src="myList"/>
+        </gm:map>
+      </td>
+    </tr>    
+  </table>
+    </gm:section>   
+    
+    <gm:section id="sectionSchools" title="Schools">
+  <div>
+      <h3>Schools</h3> 
   </div>
       <table width="100%">
     <tr>
@@ -33,6 +58,12 @@
     </tr>    
   </table>
     </gm:section>
+    
+    
+    
+    
+    
+    
   </gm:container>
 
          
