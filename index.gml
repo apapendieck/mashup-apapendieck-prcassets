@@ -36,7 +36,7 @@
     </gm:section>   
     
     <gm:section id="sectionSchools" title="Schools">
-</div>
+<div>
     <h3>Schools</h3>
 </div>
 <table width="100%">
