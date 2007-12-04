@@ -13,29 +13,7 @@
     
      <gm:section id="sectionAll" title="All Assets">
   <div>
-  
-
-      <h3>All Assets</h3> 
-  </div>
-      <table width="100%">
-    <tr>
-      <td style="padding-right:10px; width:250px" valign="top">
-        <gm:list id="listAll" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values"
-            pagesize="10" template="myListTemplate">
-          <gm:handleEvent event="select" src="mapAll"/>
-        </gm:list>
-      </td>
-      <td valign="top">
-        <gm:map id="mapAll" style="border:solid black 1px" control="large"
-            maptypes="true" data="${listAll}" geolocationref="gsx:location"
-            infotemplate="myMapDetailsTemplate"
-            lat="30.53" lng="-89.68" zoom="8">
-          <gm:handleEvent event="select" src="listAll"/>
-        </gm:map>
-      </td>
-    </tr>    
-  </table>
-    </gm:section>           
+            
                 
     <gm:section id="sectionSchools" title="Schools">
 <div>
