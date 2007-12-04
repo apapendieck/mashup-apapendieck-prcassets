@@ -5,6 +5,35 @@
     and maps it to a Google Map using a "location" field and the "geolocationref" operator.
     @author: apapendieck@gmail.com
   -->
+  
+  <gm:tabs target="myContainer"/>
+  <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:600px;">
+    <gm:section id="sectionWorld" title="World">
+      <gm:list id="World" template="myTemplate" data="http://www.digg.com/rss/containerworld_business.xml" pageSize="10"/>
+    </gm:section>
+    <gm:section id="sectionTech" title="Technology">
+      <gm:list id="Technology" template="myTemplate" data="http://www.digg.com/rss/containertechnology.xml" pageSize="10"/>
+    </gm:section>
+    <gm:section id="sectionScience" title="Science">
+      <gm:list id="Science" template="myTemplate" data="http://www.digg.com/rss/containerscience.xml" pageSize="10"/>
+    </gm:section>
+  </gm:container>
+  <gm:template id="myTemplate">
+    <table>
+      <tbody repeat="true">
+        <tr>
+          <td><h3><gm:text ref="atom:title"/></h3></td>
+        </tr>
+        <tr>
+         <td><gm:toggle/><gm:text ref="atom:summary" class="gm-toggled"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </gm:template>
+  
+  
+  
+  
     <div>
       <h3>Pearl River County Assets: All Assets</h3> 
   </div>
