@@ -18,17 +18,17 @@
       <table width="100%">
     <tr>
       <td style="padding-right:10px; width:250px" valign="top">
-        <gm:list id="myList" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values"
+        <gm:list id="listAll" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values"
             pagesize="10" template="myListTemplate">
-          <gm:handleEvent event="select" src="myMap"/>
+          <gm:handleEvent event="select" src="mapAll"/>
         </gm:list>
       </td>
       <td valign="top">
-        <gm:map id="myMap" style="border:solid black 1px" control="large"
-            maptypes="true" data="${myList}" geolocationref="gsx:location"
+        <gm:map id="mapAll" style="border:solid black 1px" control="large"
+            maptypes="true" data="${listAll}" geolocationref="gsx:location"
             infotemplate="myMapDetailsTemplate"
             lat="30.53" lng="-89.68" zoom="8">
-          <gm:handleEvent event="select" src="myList"/>
+          <gm:handleEvent event="select" src="listAll"/>
         </gm:map>
       </td>
     </tr>    
@@ -36,28 +36,28 @@
     </gm:section>   
     
     <gm:section id="sectionSchools" title="Schools">
-  <div>
-      <h3>Schools</h3> 
-  </div>
-      <table width="100%">
-    <tr>
-      <td style="padding-right:10px; width:250px" valign="top">
-        <gm:list id="myList2" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq=category%3Dschool"
-            pagesize="10" template="myListTemplate">
-          <gm:handleEvent event="select" src="myMap"/>
-        </gm:list>
-      </td>
-      <td valign="top">
-        <gm:map id="myMap2" style="border:solid black 1px" control="large"
-            maptypes="true" data="${myList2}" geolocationref="gsx:location"
-            infotemplate="myMapDetailsTemplate"
-            lat="30.53" lng="-89.68" zoom="8">
-          <gm:handleEvent event="select" src="myList2"/>
-        </gm:map>
-      </td>
-    </tr>    
-  </table>
-    </gm:section>
+</div>
+    <h3>Schools</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listSchools" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values"
+pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapSchools"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapSchools" style="border:solid black 1px" control="large"
+maptypes="true" data="${listSchools}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listSchools"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section> 
     
     
     
