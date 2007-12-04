@@ -11,9 +11,12 @@
   <gm:tabs target="myContainer"/>
   <gm:container id="myContainer" style="padding:3px;border:1px solid #369;width:900px;">
     
-     <gm:section id="sectionAll" title="All Assets">
+     <gm:section id="sectionAll" title="About">
   <div>
-            
+         <h3>About</h3> 
+  </div>
+Clickh 
+    </gm:section>          
                 
     <gm:section id="sectionSchools" title="Schools">
 <div>
