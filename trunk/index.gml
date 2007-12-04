@@ -184,7 +184,31 @@ lat="30.53" lng="-89.68" zoom="8">
 </td>
 </tr>
 </table>
-</gm:section> 
+</gm:section>
+
+ <gm:section id="sectionNursingHomes" title="Nursing Homes">
+<div>
+<h3>Nursing Homes</h3>
+</div>
+<table width="100%">
+<tr>
+<td style="padding-right:10px; width:250px" valign="top">
+<gm:list id="listNursingHomes" data="http://spreadsheets.google.com/feeds/list/o17634829598942266075.5998631686442449819/od6/public/values?sq="nursing%3D1"
+pagesize="10" template="myListTemplate">
+<gm:handleEvent event="select" src="mapNursingHomes"/>
+</gm:list>
+</td>
+<td valign="top">
+<gm:map id="mapNursingHomes" style="border:solid black 1px" control="large"
+maptypes="true" data="${listNursingHomes}" geolocationref="gsx:location"
+infotemplate="myMapDetailsTemplate"
+lat="30.53" lng="-89.68" zoom="8">
+<gm:handleEvent event="select" src="listNursingHomes"/>
+</gm:map>
+</td>
+</tr>
+</table>
+</gm:section>  
 
 
     <gm:section id="sectionDatabase" title="Database">
