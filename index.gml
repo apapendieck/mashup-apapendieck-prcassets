@@ -50,5 +50,4 @@ Phone: <gm:text ref="gsx:telephone"/>
 </div>
 </gm:template>
 
-  
 </gm:page>
