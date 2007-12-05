@@ -15,7 +15,7 @@
   <div>
          <h3>About</h3> 
   </div>
-Clickh 
+Asset mapping 
     </gm:section>          
                 
     <gm:section id="sectionSchools" title="Schools">
